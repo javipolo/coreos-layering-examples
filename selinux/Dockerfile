@@ -1,7 +1,7 @@
 # Change a SELinux boolean.  The first line is a workaround for a conflict
 # between overlayfs semantics and libselinux that is on track to being fixed, see
 # https://github.com/SELinuxProject/selinux/pull/342
-FROM registry.ci.openshift.org/rhcos-devel/rhel-coreos:4.11
+FROM registry.ci.openshift.org/rhcos-devel/rhel-coreos:latest
 #You will need the RHEL repos in a file.
 ADD rhel.repo /etc/yum.repos.d
 # See above; temporary work around; this should be fixed in newer libselinux.  Note

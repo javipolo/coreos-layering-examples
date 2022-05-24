@@ -5,7 +5,7 @@ ADD demo.bu /demo.bu
 # Compile to ignition
 RUN butane --pretty --strict demo.bu > /demo.ign
 
-FROM registry.ci.openshift.org/rhcos-devel/rhel-coreos:4.11
+FROM registry.ci.openshift.org/rhcos-devel/rhel-coreos:latest
 #You will need the RHEL repos in a file.
 ADD rhel.repo /etc/yum.repos.d
 # First workaround ignition-liveapply not being shipped yet.

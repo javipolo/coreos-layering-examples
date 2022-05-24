@@ -6,7 +6,7 @@ import requests
 import sys
 import yaml
 
-RHCOS_IMAGE = 'registry.ci.openshift.org/rhcos-devel/rhel-coreos:4.11'
+RHCOS_IMAGE = 'registry.ci.openshift.org/rhcos-devel/rhel-coreos:latest'
 RHEL_REPOS = '#You will need the RHEL repos in a file.\nADD rhel.repo /etc/yum.repos.d'
 FCOS_IMAGE = 'quay.io/coreos-assembler/fcos:testing-devel'
 
